@@ -77,7 +77,8 @@ public class Login_Usuario extends javax.swing.JFrame {
         
            boolean teste = obj_acess.verificarCredenciais(txtNomeUsuario.getText() , txtSenhaUsuario.getText());
            if( teste == true){
-               
+               TelaPrincipal tela_principal = new TelaPrincipal();
+               tela_principal.setVisible(true);
            }
      
     }//GEN-LAST:event_btnLoginActionPerformed
