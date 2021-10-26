@@ -26,21 +26,223 @@ public class Correcao_Potassio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtTeorPotassio = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        comboFontePotassio = new javax.swing.JComboBox<>();
+        btnCorrecaoPotassio = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        txtPrecoTonelada = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtEficaciaPotassio = new javax.swing.JTextField();
+        lblFundo = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Correção de Potássio");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(260, 40, 150, 30);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Digite o teor de potássio a atingir:");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(60, 100, 220, 20);
+        getContentPane().add(txtTeorPotassio);
+        txtTeorPotassio.setBounds(280, 100, 70, 20);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Escolha a fonte de potássio a utilizar");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(60, 150, 225, 15);
+
+        comboFontePotassio.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        comboFontePotassio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cloreto de Potássio", "Sulfato de Potássio", "Sulfato de Potássio e Magnésio", " " }));
+        comboFontePotassio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboFontePotassioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(comboFontePotassio);
+        comboFontePotassio.setBounds(310, 150, 140, 20);
+
+        btnCorrecaoPotassio.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnCorrecaoPotassio.setText("Correção");
+        btnCorrecaoPotassio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCorrecaoPotassioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCorrecaoPotassio);
+        btnCorrecaoPotassio.setBounds(500, 150, 80, 30);
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Digite o Preço por Tonelada:");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(60, 220, 190, 15);
+        getContentPane().add(txtPrecoTonelada);
+        txtPrecoTonelada.setBounds(260, 220, 70, 20);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Digite a eficácia de potássio esperada:");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(60, 190, 240, 15);
+        getContentPane().add(txtEficaciaPotassio);
+        txtEficaciaPotassio.setBounds(310, 190, 70, 20);
+
+        lblFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/azul-escuro-abstract-hd.png"))); // NOI18N
+        getContentPane().add(lblFundo);
+        lblFundo.setBounds(0, 0, 720, 560);
+
+        jMenu1.setText("Usuario");
+
+        jMenu3.setText("Cadastro");
+
+        jMenuItem4.setText("Administrador");
+        jMenu3.add(jMenuItem4);
+
+        jMenuItem5.setText("Cliente");
+        jMenu3.add(jMenuItem5);
+
+        jMenu1.add(jMenu3);
+
+        jMenu7.setText("Alterar");
+
+        jMenuItem1.setText("Administrador");
+        jMenu7.add(jMenuItem1);
+
+        jMenuItem3.setText("Cliente");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu7.add(jMenuItem3);
+
+        jMenu1.add(jMenu7);
+
+        jMenu9.setText("Excluir");
+
+        jMenuItem6.setText("Administrador");
+        jMenu9.add(jMenuItem6);
+
+        jMenuItem7.setText("Cliente");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu9.add(jMenuItem7);
+
+        jMenu1.add(jMenu9);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Terreno");
+
+        jMenuItem8.setText("Cadastro ");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem8);
+
+        jMenuItem9.setText("Alterar");
+        jMenu2.add(jMenuItem9);
+
+        jMenuItem10.setText("Excluir");
+        jMenu2.add(jMenuItem10);
+
+        jMenuBar1.add(jMenu2);
+
+        jMenu4.setText("Correções");
+
+        jMenuItem11.setText("Potássio");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem11);
+
+        jMenuItem12.setText("Calcio");
+        jMenu4.add(jMenuItem12);
+
+        jMenuItem13.setText("Magnésio");
+        jMenu4.add(jMenuItem13);
+
+        jMenuItem2.setText("Fósforo");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu4);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        Cadastro_Terreno cadastro_terreno = new Cadastro_Terreno();
+        cadastro_terreno.setVisible(true);
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void comboFontePotassioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboFontePotassioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboFontePotassioActionPerformed
+
+    private void btnCorrecaoPotassioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCorrecaoPotassioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCorrecaoPotassioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +280,36 @@ public class Correcao_Potassio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCorrecaoPotassio;
+    private javax.swing.JComboBox<String> comboFontePotassio;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu9;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JLabel lblFundo;
+    private javax.swing.JTextField txtEficaciaPotassio;
+    private javax.swing.JTextField txtPrecoTonelada;
+    private javax.swing.JTextField txtTeorPotassio;
     // End of variables declaration//GEN-END:variables
 }
